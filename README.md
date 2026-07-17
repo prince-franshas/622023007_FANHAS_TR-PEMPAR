@@ -153,10 +153,8 @@ Aplikasi simulasi ini sepenuhnya interaktif menggunakan kontrol gerakan dan tomb
 - Mematikan Gravitasi (Klik Kiri Cepat 2 Kali / Double-Click): Gravitasi dinonaktifkan. Indikator target berubah menjadi Kotak Merah Berlubang. Partikel terlempar menjauh secara inersial menciptakan efek ledakan gas bintang yang melambat perlahan.
 - Keluar Aplikasi: Klik tombol silang [X] pada window untuk menghentikan program dengan aman dan mengembalikan alokasi memori ke sistem operasi Linux.
 
-**Bukti Kompilasi Tanpa Error:**
-![Hasil Kompilasi](assets/Hasil%20Kompilasi.png)
+**Bukti Simulasi Tanpa Gravitasi (Klik 2 Kali)**
+![Hasil Simulasi](assets/Screenshot_2026-07-17_145053.png)
 
-**Bukti Simulasi Berjalan (Visualisasi Grafis):**
+**Bukti Simulasi Dengan Gravitasi (Klik 1 Kali)**
 ![Visualisasi Simulasi](assets/Screenshoot%202026-07-17%20145053.png)
-
-(Catatan: Tanda %20 digunakan untuk menggantikan spasi pada nama file seperti "Hasil Kompilasi.png". Jika nama filemu tidak ada spasi, tulis biasa saja).
