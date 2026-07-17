@@ -21,3 +21,47 @@ Sebelum melakukan kompilasi mandiri, pastikan pustaka grafis SDL2 dan runtime co
 ```bash
 sudo apt update
 sudo apt install build-essential libsdl2-dev
+```
+
+---
+
+flowchart TD
+    Start([START]) --> InitSDL[Inisialisasi SDL2, Window, Renderer & gravity_active = true]
+    InitSDL --> InitParticles[Alokasi Memori & Init 2500 Partikel]
+    InitParticles --> LoopCheck{Apakah Loop Utama Berjalan?}
+
+    LoopCheck -- Ya --> PollEvent[SDL_PollEvent]
+    LoopCheck -- Tidak --> CleanUp[Bebaskan Memori & SDL_Quit]
+    CleanUp --> End([END])
+
+    PollEvent --> EventType{Cek Jenis Event}
+
+    EventType -- MOUSEMOTION --> UpdateTarget[Update target_x & target_y]
+    EventType -- MOUSEBUTTONDOWN --> CheckClicks{Cek Clicks}
+    EventType -- QUIT --> SetQuit[is_running = false]
+
+    CheckClicks -- 1x Click --> SetGravTrue[gravity_active = true]
+    CheckClicks -- 2x Click --> SetGravFalse[gravity_active = false]
+
+    UpdateTarget --> ParallelRegion
+    SetGravTrue --> ParallelRegion
+    SetGravFalse --> ParallelRegion
+    SetQuit --> ParallelRegion
+
+    subgraph OpenMP Parallel Region [Komputasi Paralel Multi-Threading]
+        ParallelRegion[#pragma omp parallel for schedule dynamic] --> LoopParticles{gravity_active == true?}
+        LoopParticles -- Ya --> CalcGravity[Hitung Gravitasi, Kecepatan & Damping 0.998]
+        LoopParticles -- Tidak --> CalcInertia[Set Gaya = 0, Hambatan Udara 0.995]
+        CalcGravity --> UpdatePos[Update Posisi & Handle Pantulan Dinding]
+        CalcInertia --> UpdatePos
+    end
+
+    UpdatePos --> RenderZone
+
+    subgraph Rendering Zone [Main Thread / Serial Execution]
+        RenderZone[Clear Screen -> Gambar Target Kursor -> Gambar Partikel -> SDL_RenderPresent]
+    end
+
+    RenderZone --> LoopCheck
+
+---
