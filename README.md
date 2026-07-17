@@ -25,7 +25,8 @@ sudo apt install build-essential libsdl2-dev
 
 ---
 
-flowchart TD
+```mermaid
+graph TD
     Start([START]) --> InitSDL[Inisialisasi SDL2, Window, Renderer & gravity_active = true]
     InitSDL --> InitParticles[Alokasi Memori & Init 2500 Partikel]
     InitParticles --> LoopCheck{Apakah Loop Utama Berjalan?}
@@ -63,5 +64,5 @@ flowchart TD
     end
 
     RenderZone --> LoopCheck
-
+```
 ---
