@@ -148,7 +148,7 @@ Pengujian dilakukan untuk mengukur stabilitas visual (Frame Rate) dan perbanding
 
 ## 7. Dokumentasi Penggunaan Program
 Aplikasi simulasi ini sepenuhnya interaktif menggunakan kontrol gerakan dan tombol mouse:
-- Pengejaran Posisi: Gerakkan kursor mouse di dalam area window simulasi. Partikel akan membentuk pola awan komet yang mengejar kursor Anda secara real-time.
+- Pengejaran Posisi: Mengerakkan kursor mouse di dalam area window simulasi. Partikel akan membentuk pola awan komet yang mengejar kursor secara real-time.
 - Mengaktifkan Gravitasi (Klik Kiri 1 Kali): Pusat gravitasi aktif. Indikator target berupa Kotak Hijau Terang solid di bawah kursor. Partikel akan tertarik rapat dan mengitari koordinat kursor.
 - Mematikan Gravitasi (Klik Kiri Cepat 2 Kali / Double-Click): Gravitasi dinonaktifkan. Indikator target berubah menjadi Kotak Merah Berlubang. Partikel terlempar menjauh secara inersial menciptakan efek ledakan gas bintang yang melambat perlahan.
 - Keluar Aplikasi: Klik tombol silang [X] pada window untuk menghentikan program dengan aman dan mengembalikan alokasi memori ke sistem operasi Linux.
