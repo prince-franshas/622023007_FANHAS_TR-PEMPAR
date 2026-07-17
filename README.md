@@ -132,7 +132,7 @@ Program ini dirancang bebas dari Race Condition tanpa memerlukan overhead sinkro
 - Private Indexing: Variabel iterasi i secara otomatis bersifat lokal (private) untuk setiap thread. Setiap thread memanipulasi dan menulis langsung pada indeks array partikelnya sendiri (particles[i]), memastikan tidak ada konflik instruksi tulis (write conflicts) pada alamat memori yang sama.
 ---
 
-**6. Hasil Pengujian Program**
+## 6. Hasil Pengujian Program
 Pengujian dilakukan untuk mengukur stabilitas visual (Frame Rate) dan perbandingan utilisasi komputasi antara mode sekuensial dan mode paralel.
 - Spesifikasi CPU Pengujian: [Tulis CPU Anda, Contoh: AMD Ryzen 5 5600H / Intel Core i5-11400H]
 - Total Partikel: 2.500 Partikel aktif.
