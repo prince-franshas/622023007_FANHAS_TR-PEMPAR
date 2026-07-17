@@ -156,5 +156,7 @@ Aplikasi simulasi ini sepenuhnya interaktif menggunakan kontrol gerakan dan tomb
 **Bukti Simulasi Tanpa Gravitasi (Klik 2 Kali)**
 ![Hasil Simulasi](assets/Screenshot_2026-07-17_145053.png)
 
+
 **Bukti Simulasi Dengan Gravitasi (Klik 1 Kali)**
 ![Visualisasi Simulasi](assets/Screenshoot%202026-07-17%20145053.png)
+Screenshot 2026-07-17 145110.png
