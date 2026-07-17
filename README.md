@@ -25,14 +25,14 @@ sudo apt install build-essential libsdl2-dev
 Gunakan perintah gcc dengan optimasi tingkat tinggi (-O3) untuk memastikan eksekusi kode berjalan maksimal di CPU
 
 ```bash
-gcc -O3 src/main.c -o bin/particle_sim -fopenmp -lSDL2 -lm
+gcc gravitasi.c -o particle_sim -fopenmp -lSDL2 -lm
 ```
 ---
 
 ### C. Eksekusi Prebuilt Binary
 Sesuai dengan ketentuan pengumpulan, file biner hasil kompilasi diletakkan di dalam folder bin/. Jalankan program langsung menggunakan perintah berikut:
 ```bash
-./bin/particle_sim
+./particle_sim
 ```
 ---
 
