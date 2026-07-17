@@ -140,7 +140,7 @@ Pengujian dilakukan untuk mengukur stabilitas visual (Frame Rate) dan perbanding
 
 | Skenario Pengujian | Jumlah Thread | Kestabilan Visual (FPS) | Catatan Observasi Performa |
 | :--- | :---: | :---: | :--- |
-| **Mode Serial** | 1 Thread | ~60 FPS (Batas VSync) | Komputasi berjalan lancar namun beban terpusat penuh pada Core 0. Konsumsi daya tidak efisien. |
+| **Mode Serial** | 1 Thread | 60 FPS (Batas VSync) | Komputasi berjalan lancar namun beban terpusat penuh pada Core 0. Konsumsi daya tidak efisien. |
 | **Mode Paralel** | 4 Thread | 60 FPS (Stabil/Mulus) | Beban komputasi terbagi rata ke 4 core fisik. Suhu kerja CPU lebih dingin karena frame time komputasi sangat singkat. |
 | **Mode Paralel** | 8 Thread | 60 FPS (Sangat Stabil) | Utilisasi CPU berada di bawah 5%, menyisakan ruang performa yang sangat lega untuk sistem operasi. |
 
@@ -157,5 +157,6 @@ Aplikasi simulasi ini sepenuhnya interaktif menggunakan kontrol gerakan dan tomb
 ![Hasil Kompilasi](assets/Hasil%20Kompilasi.png)
 
 **Bukti Simulasi Berjalan (Visualisasi Grafis):**
-![Visualisasi Simulasi](assets/Visualisasi.png)
+![Visualisasi Simulasi](assets/Screenshoot%202026-07-17%20145053.png)
+
 (Catatan: Tanda %20 digunakan untuk menggantikan spasi pada nama file seperti "Hasil Kompilasi.png". Jika nama filemu tidak ada spasi, tulis biasa saja).
